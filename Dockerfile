@@ -7,6 +7,3 @@ RUN yum -y install gcc autoconf make epel-release python-devel
 RUN yum -y install python-pip
 # Install Flask, pygal, and Fabric with pip
 RUN pip install Flask pygal fabric
-# Add a project volume where we will store our flask projects
-RUN mkdir /project
-VOLUME /storage/docker/volumes/flask_project:/project
